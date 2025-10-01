@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sorelia</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <!-- Barra superior delgada en rojo -->
+  <div class="barra-superior"></div>
+
+  <!-- Navegador inferior blanco con los íconos centrados -->
+  <nav class="navegacion-inferior">
+    <span class="seccion-izquierda-nav">
+      <a href="index.html" target="_blank">
+        <img src="../Items/Imagenes/Logo Sorelia.png" alt="Sorelia Logo" class="logo-img"/>
+      </a>
+    </span>
+
+    <!-- Iconos en la navegación -->
+    <div class="contenedor-iconos-nav">
+      <a href="index.html" class="icono-nav active" title="Inicio">
+        <i class="fas fa-home"></i>
+      </a>
+      <a href="videos.html" class="icono-nav" title="Videos cortos">
+        <i class="fas fa-video"></i>
+      </a>
+      <a href="marketplace.html" class="icono-nav" title="Marketplace">
+        <i class="fas fa-shopping-cart"></i>
+      </a>
+      <a href="chats.html" class="icono-nav" title="Chats">
+        <i class="fas fa-users"></i>
+      </a>
+    </div>
+
+    <span class="seccion-derecha-nav">
+      <a href="perfil-propio.html" target="_blank">
+        <img src="../Items/Imagenes/Perfil propio.jpg" alt="Avatar Kevin" class="logo-perfil" />
+      </a>
+    </span>
+  </nav>
+
+  <div class="contenedor-principal">
+    <main class="seccion-feed">
+      <div class="cuadro-estado">
+        <div class="mensaje-estado">¿Qué estás pensando, Kevin?</div>
+        <div class="opciones-estado">
+          <span class="opcion-estado">Live</span>
+          <span class="opcion-estado">Foto</span>
+          <span class="opcion-estado">Video</span>
+        </div>
+      </div>
+
+      <!-- Publicación 1 -->
+      <div class="publicacion">
+        <div class="contenido-publicacion">
+          <div class="cabecera-publicacion">
+            <a href="perfil-kerin.html">
+              <img src="../Items/Imagenes/Imgen Perfil.jpeg" alt="Avatar Kerin" class="avatar-usuario" />
+            </a>
+            <div class="info-usuario-cabecera">
+              <h2 class="nombre-usuario">Kerin Gonzalez</h2>
+              <span class="tiempo-publicacion">hace 5 horas</span>
+            </div>
+          </div>
+          <p class="texto-publicacion">
+            Jugando GTA 6 en mi PlayStation, No puedo creerlo, después de años, por fin puedo jugarlo y ustedes no jajajajaja.
+          </p>
+        </div>
+
+        <div class="post-image">
+          <img src="../Items/Imagenes/Gta 6 Jugando.jpg" alt="Imagen GTA" class="imagen-publicacion" />
+        </div>
+
+        <!-- Comentarios -->
+        <div class="burbuja-comentario">
+          <img src="../Items/Imagenes/Luiz Lopez Perfil.jpg" alt="Avatar Luis" class="avatar-comentario" />
+          <div class="caja-comentario">
+            <strong>Luis Lopez:</strong> Bueno, ya quiero comprarlo pero lástima que no cuento con el suficiente dinero
+          </div>
+        </div>
+
+        <div class="opciones-estado">
+          <span class="opcion-estado">Like</span>
+          <span class="opcion-estado">Comentar</span>
+          <span class="opcion-estado">Compartir</span>
+        </div>
+      </div>
+
+      <!-- Publicación 2 -->
+      <div class="publicacion">
+        <div class="contenido-publicacion">
+          <div class="cabecera-publicacion">
+            <a href="perfil-rafael.html">
+              <img src="../Items/Imagenes/Rafael Inurreta Perfil.jpg" alt="Avatar Rafael" class="avatar-usuario" />
+            </a>
+            <div class="info-usuario-cabecera">
+              <h2 class="nombre-usuario">Rafael Inurreta</h2>
+              <span class="tiempo-publicacion">hace 3 horas</span>
+            </div>
+          </div>
+          <p class="texto-publicacion">
+            Rammstein en vivo superó todas las expectativas. El escenario, los efectos, la energía de la banda y del público… ¡simplemente inolvidable!
+            Si fuiste, sabes de lo que hablo; si no, ¡espero que la próxima no te la pierdas!
+          </p>
+          <p class="etiqueta">#Rock #Rammstein #Metal</p>
+        </div>
+
+        <div class="post-image">
+          <video src="../Items/Videos/Concierto.mp4" controls autoplay muted class="video-publicacion"></video>
+        </div>
+
+        <!-- Comentarios -->
+        <div class="burbuja-comentario">
+          <img src="../Items/Imagenes/Sofia Hernandez perfil.png" alt="Avatar Sofia" class="avatar-comentario" />
+          <div class="caja-comentario">
+            <strong>Sofia:</strong> no me digas que tu si fuistes al concierto.nooooo
+          </div>
+        </div>
+
+        <div class="opciones-estado">
+          <span class="opcion-estado">Like</span>
+          <span class="opcion-estado">Comentar</span>
+          <span class="opcion-estado">Compartir</span>
+        </div>
+      </div>
+    </main>
+
+    <!-- Sidebar de usuarios conectados -->
+    <aside class="barra-lateral">
+      <h3>Chat</h3>
+      <div class="lista-usuarios">
+        <a href="perfil-kerin.html" class="usuario-item">
+          <img src="../Items/Imagenes/Imgen Perfil.jpeg" alt="Avatar Kerin" class="avatar-usuario-conectado" />
+          <div class="info-usuario">
+            <span class="name">Kerin Gonzalez</span>
+            <span class="message">Hola como estas, te comentaba...</span>
+            <span class="status">Activa ahora</span>
+          </div>
+          <div class="indicador-estado active"></div>
+        </a>
+
+        <a href="perfil-rafael.html" class="usuario-item">
+          <img src="../Items/Imagenes/Rafael Inurreta Perfil.jpg" alt="Avatar Rafael" class="avatar-usuario-conectado" />
+          <div class="info-usuario">
+            <span class="name">Rafael Inurreta</span>
+            <span class="message">¿Ya viste el nuevo tráiler de GTA?</span>
+            <span class="status">Activa hace 1 hora</span>
+          </div>
+          <div class="indicador-estado pink"></div>
+        </a>
+      </div>
+      <footer class="pie-pagina">
+        © SoreliaNet Interactive 2025 
+      </footer>
+    </aside>
+  </div>
+
+  <div class="burbuja-chat">
+    <i class="fas fa-comment"></i>
+  </div>
+</body>
+</html>

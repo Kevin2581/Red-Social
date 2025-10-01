@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Perfil Rafael Inurreta</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <!-- Barra superior delgada en rojo -->
+  <div class="barra-superior"></div>
+
+  <!-- Navegador inferior blanco con íconos centrados -->
+  <nav class="navegacion-inferior">
+    <span class="seccion-izquierda-nav">
+      <a href="index.html" target="_blank">
+        <img src="../Items/Imagenes/Logo Sorelia.png" alt="Sorelia Logo" class="logo-img"/>
+      </a>
+    </span>
+
+    <!-- Iconos en la navegacion -->
+    <div class="contenedor-iconos-nav">
+      <a href="index.html" class="icono-nav" title="Inicio">
+        <i class="fas fa-home"></i>
+      </a>
+      <a href="../videos.html" class="icono-nav" title="Videos cortos">
+        <i class="fas fa-video"></i>
+      </a>
+      <a href="../marketplace.html" class="icono-nav" title="Marketplace">
+        <i class="fas fa-shopping-cart"></i>
+      </a>
+      <a href="../chats.html" class="icono-nav active" title="Chats">
+        <i class="fas fa-users"></i>
+      </a>
+    </div>
+
+    <span class="seccion-derecha-nav">
+      <a href="/Perfil-propio.html" target="_blank">
+        <img src="../Items/Imagenes/Perfil propio.jpg" alt="Avatar Kevin" class="logo-perfil" />
+      </a>
+    </span>
+  </nav>
+
+  <div class="contenedor-principal">
+    <main class="seccion-feed">
+      <!-- Recuadro de perfil completo -->
+      <div class="tarjeta-perfil">
+        <div class="banner-perfil">Rafael Inurreta</div>
+        <div class="fondo-perfil">
+          <img src="../Items/Imagenes/Rafael Inurreta Perfil grande.jpg" alt="Portada de perfil" />
+        </div>
+        <div class="informacion-perfil">
+          <img src="../Items/Imagenes/Rafael Inurreta Perfil.jpg" alt="Foto de perfil" class="avatar-perfil" />
+          <div class="descripcion-perfil">Si la chamba seria un delito, me declaro culpable.</div>
+          <div class="estadisticas-perfil">
+            <div class="stat"><strong>117</strong><span>Publicaciones</span></div>
+            <div class="stat"><strong>221</strong><span>Likes</span></div>
+            <div class="stat"><strong>34</strong><span>Amigos</span></div>
+          </div>
+          <div class="acciones-perfil">
+            <button class="boton add-friend">Agregar amigo</button>
+            <button class="boton send-message">Enviar mensaje</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Título de publicaciones -->
+      <h2 class="feed-title">Publicaciones</h2>
+
+      <!-- Publicación del usuario -->
+      <div class="publicacion">
+        <div class="post-content">
+          <div class="cabecera-publicacion">
+            <img src="../Items/Imagenes/Rafael Inurreta Perfil.jpg" alt="Avatar Rafael" class="avatar-usuario" />
+            <div class="info-usuario-cabecera">
+              <h2 class="nombre-usuario">Rafael Inurreta</h2>
+              <span class="tiempo-publicacion">hace 3 horas</span>
+            </div>
+          </div>
+          <p class="texto-publicacion">
+            Rammstein en vivo superó todas las expectativas. El escenario, los efectos, la energía de la banda y del público… ¡simplemente inolvidable!
+            Si fuiste, sabes de lo que hablo; si no, ¡espero que la próxima no te la pierdas!
+          </p>
+          <p class="hashtag">#Rock #Rammstein #Metal</p>
+        </div>
+
+        <div class="post-image">
+          <video src="../Items/Videos/Concierto.mp4" controls autoplay muted class="video-publicacion"></video>
+        </div>
+
+        <!-- Comentarios -->
+        <div class="burbuja-comentario">
+          <img src="../Items/Imagenes/Sofia Hernandez perfil.png" alt="Avatar Sofia" class="avatar-comentario" />
+          <div class="caja-comentario">
+            <strong>Sofia:</strong> no me digas que tu si fuistes al concierto.nooooo
+          </div>
+        </div>
+
+        <!-- Acciones después de comentarios -->
+        <div class="opciones-estado">
+          <span class="opcion-estado">Like</span>
+          <span class="opcion-estado">Comentar</span>
+          <span class="opcion-estado">Compartir</span>
+        </div>
+      </div>
+    </main>
+
+    <!-- Sidebar de usuarios sugeridos -->
+    <aside class="barra-lateral">
+      <h3>Amigos Sugeridos</h3>
+      <div class="lista-usuarios">
+        <!-- Primer usuario sugerido -->
+        <div class="usuario-sugerido">
+          <img src="../Items/Imagenes/Imgen Perfil.jpeg" alt="Avatar Kerin" class="avatar-usuario-conectado" />
+          <div class="info-usuario">
+            <span class="name">Arthur Moran</span>
+            <span class="status">Activa hace 5 min</span>
+          </div>
+          <button class="boton-agregar">Agregar</button>
+        </div>
+
+        <!-- Segundo usuario sugerido -->
+        <div class="usuario-sugerido">
+          <img src="../Items/Imagenes/Kevin Tillit perfil.jpg" alt="Avatar Sofia" class="avatar-usuario-conectado" />
+          <div class="info-usuario">
+            <span class="name">Kevin Tillit</span>
+            <span class="status">Activa hace 10 min</span>
+          </div>
+          <button class="boton-agregar">Agregar</button>
+        </div>
+      </div>
+      <footer class="pie-pagina">
+        © SoreliaNet Interactive 2025 
+      </footer>
+    </aside>
+  </div>
+
+  <div class="burbuja-chat">
+    <i class="fas fa-comment"></i>
+  </div>
+</body>
+</html>
